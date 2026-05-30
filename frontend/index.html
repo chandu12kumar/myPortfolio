@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body class="bg-black text-white">
+    <!-- navbar of portfolio -->
+    <div class="w-full fixed top-0 z-50 bg-black">
+      <div
+        class="h-16 w-full flex items-center justify-between px-4 md:px-8"
+        id="navbar"
+      >
+        <!-- logi -->
+        <h1
+          class="md:text-4xl text-xl font-extrabold bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text text-transparent md:pl-4 pl-2 md:pr-4 pr-2"
+        >
+          Portfolio
+        </h1>
+        <div>
+          <!-- desktop menu -->
+          <div
+            class="h-17 min-w-40 text-2xl md:flex items-center justify-between gap-10 md:pr-4 text-gray-500 font-bold hidden text-center"
+          >
+            <a
+              href="#Home"
+              class="hover:bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="hover:bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+              >About</a
+            >
+            <a
+              href="#skills"
+              class="hover:bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+              >Skill</a
+            >
+            <a
+              href="#project"
+              class="hover:bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+              >Project</a
+            >
+            <a
+              href="#Education"
+              class="hover:bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+              >Education</a
+            >
+            <a
+              href="#Contact"
+              class="hover:bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+              >Contact</a
+            >
+          </div>
+
+          <!-- mobile icon -->
+          <div class="block text-2xl pr-2 md:hidden" id="icon">
+            <i class="fa-solid fa-bars cursor-pointer"></i>
+          </div>
+
+          <!-- for mobile dropdown -->
+          <div
+            class="relative h-80 w-60 flex-col items-center justify-center gap-4 bg-gray-400 text-black mt-65 mr-3 font-bold text-2xl border-none rounded-2xl hidden"
+            id="heading"
+          >
+            <span class="absolute top-1 right-2 text-4xl cursor-pointer" id="x"
+              >X</span
+            >
+            <a
+              href="#Home"
+              class="hover:bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+            >
+              Home
+            </a>
+            <a
+              href="#about"
+              class="hover:bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+            >
+              About
+            </a>
+            <a
+              href="#skills"
+              class="hover:bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+            >
+              Skill
+            </a>
+            <a
+              href="#project"
+              class="hover:bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+            >
+              Project
+            </a>
+            <a
+              href="#Education"
+              class="hover:bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+            >
+              Education
+            </a>
+            <a
+              href="#Contact"
+              class="hover:bg-gradient-to-t from-[#e91b1b] to-[#070505] bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300 ease-in-out hover:scale-110"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full border-t-1 bg-[#E5E4E2] opacity-20"></div>
+    </div>
+
+    <!-- main content of portfolio -->
+    <main>
+
+        <!-- Home -->
+        <section class="relative mt-25 px-4 md:px-10" id="Home">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10 font-[400px]">
+            <div class="grid items-center">
+                <h1 class="grid text-5xl leading-12 font-bold mb-6 space-y-2">
+                    <span>Hi, I'm a</span>
+                    <span>Chandu Kumar</span>
+                    <span>And  
+                      <span class="text-[#DC2626] font-bold" id="role"></span>
+                      <span class="text-[#DC2626] animate-pulse">|</span>
+                    </span>
+                </h1>
+                <p class="text-xl leading-8 font-normal text-[#9CA3AF] mb-8 mr-4">
+                    passionate about creating beautiful and functional chatbot, web
+                    applications. Specializing in React, pyhon, Machine learning and
+                    modern web technologies.
+                </p>
+                <div class="flex flex-wrap font-bold gap-4">
+                    <a href="#project" class="block font-semibold px-8 py-3 bg-[#DC2626] rounded-lg shadow-md cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-red-400">View my work</a>
+                    <a href="#Contact" class="block font-semibold text-[#DC2626] px-8 py-3 rounded-lg border-[#DC2626] border-2 cursor-pointer transition-all duration-300 ease-in-out hover:scale-105">Get In Touch</a>
+                </div>
+                <div class="flex flex-wrap gap-4 py-4 text-xl">
+                    <a href="https://github.com/chandu12kumar" target="_blank" class="transition-all duration-300 ease-in-out hover:scale-150 hover:text-[#dc2626]">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chandan-kumar-saw-27416b328/" target="_blank" class="transition-all duration-300 ease-in-out hover:scale-150 hover:text-[#dc2626]">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:ravindranamo45kumar@gmail.com" class="transition-all duration-300 ease-in-out hover:scale-150 hover:text-[#dc2626]">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="relative inline-block mx-auto">
+              <!-- <div class="absolute inset-0 rounded-xl 
+                bg-red-600/40 blur-xl -z-10">
+              </div> -->
+              <div class="inline-block max-w-xs overflow-hidden shadow-2xl shadow-red-500 rounded-full">
+                <img src="photo/profile_pic.jpeg" alt="pic" class="w-auto h-auto block rounded-full shadow-2xl shadow-red-500 border-1 border-red-500/50" />
+              </div>
+            </div>
+        </div>
+        </section>
+
+        <div class="h-0.3 border-1 border-gray-600 mt-15 ">
+
+        </div>
+<!----------- About -------------->
+        <section class="relative text-start bg-gray-950 py-40" id="about">
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 font-[400px] mx-5">
+
+            <div class="relative inline-block mx-auto md:row-span-3">
+
+              <!-- CIRCULAR BLUR (behind photo) -->
+              <div class="absolute inset-0 rounded-full bg-red-500/40 blur-2xl scale-125"></div>
+
+              <!-- PHOTO -->
+              <div class="relative w-56 h-56 md:w-64 md:h-64 overflow-hidden rounded-full border-2 border-red-500">
+                <img
+                  src="photo/profile_pic.jpeg"
+                  alt="pic"
+                  class="w-full h-full object-cover rounded-full"
+                />
+              </div>
+
+            </div>
+
+        
+            <div class="flex items-center justify-start text-5xl leading-12 font-bold mb-3 md:col-span-2 text-center md:text-left">
+              <h1>About <span class="text-red-500">Me</span></h1>
+            </div>
+            <p class="md:col-span-2 row-span-2 text-gray-400 font-semibold pl-4">Welcome to my portfolio.I have a strong technical background with skills across software development, machine learning, and front-end technologies. I am proficient in Python, C++, JavaScript, HTML, CSS, and building web applications using ReactJS, along with designing clean and responsive GUIs. I also have a foundation in machine learning and artificial intelligence, allowing me to understand and implement basic ML models and AI concepts. With solid problem-solving abilities and good communication skills, I am able to collaborate effectively and contribute to full-stack and front-end projects.</p>
+        
+          </div>
+        </section>
+
+        <!-- line -->
+        <div class="h-0.3 border-1 border-gray-600">
+        </div>
+<!---------SKILLs ---------------------->
+        <section class="relative py-20" id="skills">
+          <div>
+            <div class="flex items-center justify-center text-5xl font-bold leading-12 mb-10">
+              <h1>Skills & Expertise</h1>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+              <!-----frameworks  -->
+              <div class="w-full max-w-sm mx-auto border-2 border-gray-500 rounded-xl shadow-xl shadow-red-500/40 cursor-pointer pb-5 transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-red-600/60">
+                <div class="pt-7 pl-3 pb-3 font-bold flex items-center gap-2 transition-all duration-300 ease-in-out hover:text-red-400/60 hover:scale-105">
+                  <span class="h-6 w-1 rounded-full bg-red-500 block"></span>
+                  <h2 class="text-2xl">Frameworks</h2>
+                </div>
+
+                <div class="pt-1 pl-3 flex flex-col gap-2 ">
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Tailwind CSS</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">TensorFlow</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Django</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Flask</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">NodeJS</h2>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ------languages------ -->
+              <div class="w-full max-w-sm mx-auto border-2 border-gray-500 rounded-xl shadow-xl shadow-red-500/40 cursor-pointer pb-5 transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-red-600/60">
+                <div class="pt-7 pl-3 pb-3 font-bold flex items-center gap-2 transition-all duration-300 ease-in-out hover:text-red-400/60 hover:scale-105">
+                  <span class="h-6 w-1 rounded-full bg-red-500 block"></span>
+                  <h2 class="text-2xl">Languages</h2>
+                </div>
+
+                <div class="pt-1 pl-3 flex flex-col gap-2 ">
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Python</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">PHP</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">C++</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">JavaScript</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">SQL</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">HTML</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">CSS </h2>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full max-w-sm mx-auto border-2 border-gray-500 rounded-xl shadow-xl shadow-red-500/40 cursor-pointer pb-5 transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-red-600/60">
+                <div class="pt-7 pl-3 pb-3 font-bold flex items-center gap-2 transition-all duration-300 ease-in-out hover:text-red-400/60 hover:scale-105">
+                  <span class="h-6 w-1 rounded-full bg-red-500 block"></span>
+                  <h2 class="text-2xl">Tools</h2>
+                </div>
+
+                <div class="pt-1 pl-3 flex flex-col gap-2 ">
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">VS-Code</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">ReactJS</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Git/GitHub</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">MySQL</h2>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full max-w-sm mx-auto border-2 border-gray-500 rounded-xl shadow-xl shadow-red-500/40 cursor-pointer pb-5 transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-red-600/60">
+                <div class="pt-7 pl-3 pb-3 font-bold flex items-center gap-2 transition-all duration-300 ease-in-out hover:text-red-400/60 hover:scale-105">
+                  <span class="h-6 w-1 rounded-full bg-red-500 block"></span>
+                  <h2 class="text-2xl">Platforms</h2>
+                </div>
+
+                <div class="pt-1 pl-3 flex flex-col gap-2 ">
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Web</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Windows</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Google Cloud</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">LucidChart</h2>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="w-full max-w-sm mx-auto border-2 border-gray-500 rounded-xl shadow-xl shadow-red-500/40 cursor-pointer pb-5 transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-red-600/60">
+                <div class="pt-7 pl-3 pb-3 font-bold flex items-center gap-2 transition-all duration-300 ease-in-out hover:text-red-400/60 hover:scale-105">
+                  <span class="h-6 w-1 rounded-full bg-red-500 block"></span>
+                  <h2 class="text-2xl">Soft Skills</h2>
+                </div>
+
+                <div class="pt-1 pl-3 flex flex-col gap-2 ">
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Leadership</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Event Management</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Writing</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Public Speaking</h2>
+                  </div>
+                  <div class="flex items-center transition-all duration-300 ease-in-out hover:text-red-700/60 hover:scale-105">
+                    <span class="text-red-400 hover:text-red-600 block">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                    <h2 class="text-lg font-semibold">Time Management</h2>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- line -->
+        <div class="h-0.3 border-1 border-gray-600">
+        </div>
+<!-----------project  ------------------->
+        <section class="relative py-20" id="project">
+          <div>
+
+            <div class="flex items-center justify-center text-5xl font-bold leading-12 mb-12">
+              <h1 class="text-4xl md:text-5xl font-bold text-white relative">Projects</h1>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-8">
+
+<!--------- --------currency convertor -->
+              <a href="https://github.com/chandu12kumar/currency_convertor" target="_blank" class="border-2 mx-auto flex flex-col max-w-sm border-gray-500 rounded-xl shadow-xl shadow-red-500/40 cursor-pointer transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-red-600/60 group w-full overflow-hidden">
+                <div class="max-w-sm object-cover">
+                  <img src="photo/project2(convertor).jpg" alt="$" class="rounded-t-xl">
+                </div>
+
+                <div class="py-4 px-3 bg-red-950/30 flex flex-col flex-1">
+                  <h2 class="text-xl font-semibold pb-2 text-white">Currency Exchange</h2>
+                  <p class="text-gray-400 leading-relaxed font-medium mb-4">Built a responsive currency converter web app using Fetch API to retrieve real-time exchange rates.</p>
+                  <div class="flex flex-wrap gap-3 mb-auto">
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">HTML</span>
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">CSS</span>
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">javaScript</span>
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">fetch API</span>
+                  </div>
+                </div>
+              </a>
+
+<!--------- --------•	tic-tac-toe game -->
+              <a href="https://github.com/chandu12kumar/tic-tac-toe" class="border-2 mx-auto flex flex-col max-w-sm border-gray-500 rounded-xl shadow-xl shadow-red-500/40 cursor-pointer transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-red-600/60 group w-full overflow-hidden">
+                <div class="max-w-sm object-cover">
+                  <img src="photo\tic-tac.jpeg" alt="game_logo" class="rounded-t-xl">
+                </div>
+
+                <div class="py-4 px-3 bg-red-950/30 flex flex-col flex-1">
+                  <h2 class="text-xl font-semibold pb-2 text-white">Tic-Tac-Toe Game</h2>
+                  <p class="text-gray-400 leading-relaxed font-medium mb-4">Developed an interactive Tic-Tac-Toe game using front-end technologies with a clean and responsive GUI.</p>
+
+                  <div class="flex flex-wrap gap-3 mb-auto">
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">HTML</span>
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">CSS</span>
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">javaScript</span>
+                  </div>
+                </div>
+              </a>
+
+<!--------- --------•	Predicting Diabetes -->
+              <a href="" class="border-2 mx-auto flex flex-col max-w-sm border-gray-500 rounded-xl shadow-xl shadow-red-500/40 cursor-pointer transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-red-600/60 group w-full overflow-hidden">
+                <div class="max-w-sm object-cover">
+                  <img src="photo\OIP.jpg" alt="$" class="rounded-t-xl">
+                </div>
+
+                <div class="py-4 px-3 bg-red-950/30 flex flex-col flex-1">
+                  <h2 class="text-xl font-semibold pb-2 text-white">Predicting Diabetes</h2>
+                  <p class="text-gray-400 leading-relaxed font-medium mb-4">Built a KNN-based classification model using the Pima Indians Diabetes Dataset to predict diabetes risk.</p>
+
+                  <div class="flex flex-wrap gap-3 mb-auto">
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">Python</span>
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">Google Cloud</span>
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">Dataset </span>
+                  </div>
+                </div>
+              </a>
+
+<!--------- --------•	School Management System  -->
+              <a href="" class="border-2 mx-auto flex flex-col max-w-sm border-gray-500 rounded-xl shadow-xl shadow-red-500/40 cursor-pointer transition-all duration-500 ease-in-out hover:scale-110 hover:shadow-red-600/60 group w-full overflow-hidden">
+                <div class="max-w-sm object-cover">
+                  <img src="photo/project3(school).jpeg" alt="$" class="rounded-t-xl">
+                </div>
+
+                <div class="py-4 px-3 bg-red-950/30 flex flex-col flex-1">
+                  <h2 class="text-xl font-semibold pb-2 text-white">School Management System</h2>
+                  <p class="text-gray-400 leading-relaxed font-medium mb-4">Developed a web-based system using OOP principles to manage student records, staff details, attendance, and administrative tasks.</p>
+                  
+                  <div class="flex flex-wrap gap-3 mb-auto">
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">C++</span>
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">OOPs concept</span>
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">javaScript</span>
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">HTML</span>
+                    <span class="text-sm font-bold  border-2 rounded-xl px-2 py-1 text-red-700 bg-red-500/20 shadow-sm mr-2">CSS</span>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- line -->
+        <div class="h-0.3 border-1 border-gray-600">
+        </div>
+<!--------------education ----------------- -->
+        <section class="relative py-20" id="Education">
+
+          <div>
+            <div class="flex items-center justify-center text-5xl font-bold leading-12 mb-12">
+              <h1 class="text-4xl md:text-5xl font-bold text-white relative">Education</h1>
+            </div>
+
+            <div class=" flex flex-col font-bold gap-4 mx-4 relative">
+
+              <div class="mb-6 px-6 md:px-10 relative">
+                <div class="text-red-700/50">2023 - continue</div>
+                <h2 class="text-xl pt-4">Bachelor of technology in CSE</h2>
+                <p class="pb-4">Sarala Birla University, Ranchi</p>
+                <p>Focused on artificial intelligence, software development, algorithms, and web technologies. I'm working on my project.</p>
+                <div class="h-4 w-4 border-4 rounded-full border-red-700 absolute top-1 left-0 z-5"></div>
+              </div>
+
+              <div class="mb-6 px-6 md:px-10 relative">
+                <div class="text-red-700/50">2021 - 2023</div>
+                <h2 class="text-xl pt-4">Intermediate - Science</h2>
+                <p class="pb-4">L.A Garden High School, Ranchi</p>
+                <p>The courses that I have choose in Intermediate was Mathematics, Chemistry, Physics.</p>
+                <div class="h-4 w-4 border-4 rounded-full border-red-700 absolute top-1 left-0 z-5"></div>
+              </div>
+
+              <div class="h-full w-0 border-2 border-gray-600 absolute top-0 left-1.5"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- line -->
+        <div class="h-0.3 border-1 border-gray-600">
+        </div>
+<!-----------------contact  ----------------->
+        <section class="relative py-20 md:px-10" id="Contact">
+          <div>
+            <div class="flex items-center justify-center text-5xl font-bold leading-12 mb-12">
+              <h1 class="text-4xl md:text-5xl font-bold text-white relative">Contact Me</h1>
+            </div>
+
+            <div class="grid gap-12 md:grid-cols-2 px-8">
+
+              <div class="p-4 flex flex-col md:justify-center h-fit md:h-full">
+                <h1 class="text-3xl font-bold">Let's build an awesome <br><span class="text-[#7F1D1D]">project</span> together!</h1>
+                <br>
+                <p class="text-[#CBD5E1] font-bold pt-4">Let's create something amazing together. Feel free to reach out and let's discuss your next project.</p>
+                <br>
+
+                <div class="hidden md:flow-root">
+                  <div class="cursor-pointer text-lg font-semibold">
+                    <i class="fa-regular fa-paper-plane animate-pulse text-[#dc2626]"></i>
+                    <i>ravindranamo45kumar@gmail.com</i>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-phone-volume animate-pulse text-[#dc2626]"></i>
+                    <b>7595898935</b>
+                  </div>
+                  <br>
+
+                  <div class="flex flex-wrap gap-4 py-4 text-2xl">
+                    <a href="https://github.com/chandu12kumar" target="_blank" class="transition-all duration-300 ease-in-out hover:scale-150 hover:text-[#dc2626]">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chandan-kumar-saw-27416b328/" target="_blank" class="transition-all duration-300 ease-in-out hover:scale-150 hover:text-[#dc2626]">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/unique__chandu__75k/" target="_blank" class="transition-all duration-300 ease-in-out hover:scale-150 hover:text-[#dc2626]">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="transition-all duration-300 ease-in-out hover:scale-150 hover:text-[#dc2626]">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="rounded-2xl bg-gradient-to-b from-[#0A0A0A] via-[#7F1D1D] to-[#FF3B3B] p-[2px] transform">
+                <div class="bg-[#1F1F1F] rounded-2xl p-6">
+
+                <form id="contactForm" class="space-y-4">
+                  <h1 class="text-white text-center text-2xl font-extrabold">Enter your's Details</h1>
+
+                  <input type="text" id="Name" name="Name" placeholder="Enter your name" class="w-full border-2 rounded-lg border-[#6B7280] bg-[#6B7280] font-bold text-lg p-2 text-white outline-none focus:border-red-600" required>
+
+                  <input type="email" id="email" name="email" placeholder="Ex- apnadaloemail@gmail.com" class="w-full border-2 rounded-lg border-[#6B7280] bg-[#6B7280] font-bold text-lg p-2 text-white outline-none focus:border-red-600" required>
+
+                  <input type="text" id="number" name="number" placeholder="Ex- XXXXX XXXXX" class="w-full border-2 rounded-lg border-[#6B7280] bg-[#6B7280] font-bold text-lg p-2 text-white outline-none focus:border-red-600" required>
+
+                  <input type="text" id="City" name="City" placeholder="Ex - Ranchi" class="w-full border-2 rounded-lg border-[#6B7280] bg-[#6B7280] font-bold text-lg p-2 text-white outline-none focus:border-red-600" required>
+
+                  <textarea name="message" id="message" placeholder="Enter your message..." class="w-full rounded-lg border-2 border-[#6B7280] bg-[#6B7280] p-3 text-lg font-bold text-white outline-none focus:border-red-600 h-40 resize-none" rows="6" cols="8" required></textarea>
+
+                  <input type="submit" value="Submit" class="w-full rounded-xl border-4 border-[#7F1D1D] bg-[#8B0000] py-2 text-lg font-extrabold text-black shadow-[0_0_20px_#7F1D1D] hover:shadow-[0_0_35px_#7F1D1D] transition-all duration-500 ease-out hover:scale-105">
+                </form>
+                </div>
+              </div>
+
+              <div class="mt-8 space-y-4 md:hidden">
+                  <div class="cursor-pointer text-lg font-semibold">
+                    <i class="fa-regular fa-paper-plane animate-pulse text-[#dc2626]"></i>
+                    <i>ravindranamo45kumar@gmail.com</i>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-phone-volume animate-pulse text-[#dc2626]"></i>
+                    <b>7595898935</b>
+                  </div>
+                  <br>
+
+                  <div class="flex flex-wrap gap-4">
+                    <a href="https://github.com/chandu12kumar" target="_blank" class="transition-all duration-300 ease-in-out hover:scale-150 hover:text-[#dc2626]">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chandan-kumar-saw-27416b328/" target="_blank" class="transition-all duration-300 ease-in-out hover:scale-150 hover:text-[#dc2626]">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/unique__chandu__75k/" target="_blank" class="transition-all duration-300 ease-in-out hover:scale-150 hover:text-[#dc2626]">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="transition-all duration-300 ease-in-out hover:scale-150 hover:text-[#dc2626]">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <!-- line -->
+        <div class="h-0.3 border-1 border-gray-600">
+        </div>
+        
+<!--------- footer ----------- -->
+    <div class="footer">
+      <div class="flex items-center justify-center py-8 text-lg gap-0.5 text-[#6B7280]">
+        <p>Developed with love by Chandu Kumar<p>
+        <i class="fa-regular fa-copyright"></i>
+        <p>2025</p>
+      </div>
+    </div>
+    <script src="javaScript.js"></script>
+</body>
+</html>
