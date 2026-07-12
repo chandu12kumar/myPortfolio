@@ -55,13 +55,13 @@ function typeRole() {
 }
 
 typeRole();
-
-// third part
+// Third part: Contact Form handler
 const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
+  // Gather values from form inputs
   const data = {
     Name: form.Name.value,
     email: form.email.value,
@@ -70,24 +70,30 @@ form.addEventListener("submit", async (e) => {
     message: form.message.value,
   };
 
+  // Determine active API server URL. If running locally, target local Express server (port 5000)
+  const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+  const backendUrl = isLocal
+    ? "http://localhost:5000/api/contact"
+    : "https://myportfolio-1bw1.onrender.com/api/contact";
+
   try {
-    const res = await fetch("https://myportfolio-1bw1.onrender.com/api/contact", {
+    const res = await fetch(backendUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify(data),
     });
 
     const result = await res.json();
 
     if (result.success) {
-      alert("Message sent successfully!");
-      form.reset();
+      alert("Message Sent Successfully!");
+      form.reset(); // Clear the form fields automatically on success
     } else {
-      alert(result.msg);
+      alert(result.msg || "Failed to send message.");
     }
   } catch (err) {
-    alert("Something went wrong");
+    alert("Failed to send message.");
   }
 });
-
-const PORT = process.env.PORT || 3000;
