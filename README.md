@@ -72,6 +72,7 @@ portfolio/
 ├── .env
 ├── .gitignore
 └── README.md
+└── README_GUIDE.md
 ```
 
 ## 📸 Projects Featured
