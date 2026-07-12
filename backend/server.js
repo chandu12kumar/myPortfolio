@@ -37,7 +37,9 @@ if (process.env.SMTP_USER && process.env.SMTP_PASS) {
     }
   });
 } else {
-  console.warn("⚠️ SMTP credentials (SMTP_USER/SMTP_PASS) are missing in environment configuration.");
+  console.warn(
+    "⚠️ SMTP credentials (SMTP_USER/SMTP_PASS) are missing in environment configuration.",
+  );
 }
 
 /**
@@ -51,16 +53,18 @@ app.post("/api/contact", async (req, res) => {
   if (!Name || !email || !message) {
     return res.status(400).json({
       success: false,
-      msg: "Missing required fields: Name, email, and message are required."
+      msg: "Missing required fields: Name, email, and message are required.",
     });
   }
 
   // Ensure SMTP parameters are set before attempting to send
   if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
-    console.error("❌ Email transmission failed: SMTP credentials are not configured.");
+    console.error(
+      "❌ Email transmission failed: SMTP credentials are not configured.",
+    );
     return res.status(500).json({
       success: false,
-      msg: "Failed to send message."
+      msg: "Failed to send message.",
     });
   }
 
@@ -121,18 +125,36 @@ app.post("/api/contact", async (req, res) => {
   };
 
   try {
+    console.log("Sending mail...");
+    console.log("To:", recipientEmail);
+    console.log("From:", process.env.SMTP_USER);
     await transporter.sendMail(mailOptions);
     return res.json({
       success: true,
       msg: "Message Sent Successfully!",
     });
   } catch (err) {
-    console.error("❌ Nodemailer sendMail error:", err);
+    console.error("❌ SEND MAIL ERROR");
+    console.error(err);
+
     return res.status(500).json({
       success: false,
-      msg: "Failed to send message.",
+      msg: err.message,
+      code: err.code,
+      response: err.response,
     });
   }
+});
+
+app.get("/debug", (req, res) => {
+  res.json({
+    smtpUser: process.env.SMTP_USER || "missing",
+    smtpPass: process.env.SMTP_PASS ? "configured" : "missing",
+    smtpTo: process.env.SMTP_TO || "missing",
+    smtpHost: process.env.SMTP_HOST,
+    smtpPort: process.env.SMTP_PORT,
+    smtpSecure: process.env.SMTP_SECURE,
+  });
 });
 
 // Start Express Server
